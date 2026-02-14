@@ -4,26 +4,26 @@ const methods = [
   {
     title: 'Cruz',
     href: '/',
-    staticImg: '/static/CROSS/Cruz.png',
-    dynamicImg: '/static/CROSS/Cruz.gif',
+    staticImg: `${import.meta.env.BASE_URL}/static/CROSS/Cruz.png`,
+    dynamicImg: `${import.meta.env.BASE_URL}/static/CROSS/Cruz.gif`,
   },
   {
     title: 'Finish 2 Layers (F2L)',
     href: '/advancedF2L',
-    staticImg: '/static/F2L/static/Fish.png',
-    dynamicImg: '/static/F2L/dynamic/Fish.gif',
+    staticImg: `${import.meta.env.BASE_URL}/static/F2L/static/Fish.png`,
+    dynamicImg: `${import.meta.env.BASE_URL}/static/F2L/dynamic/Fish.gif`,
   },
   {
     title: 'OLL (Orientation Last Layer)',
     href: '/advancedOLL',
-    staticImg: '/static/OLL/static/sune_invertido.png',
-    dynamicImg: '/static/OLL/dynamic/sune_full.gif',
+    staticImg: `${import.meta.env.BASE_URL}/static/OLL/static/sune_invertido.png`,
+    dynamicImg: `${import.meta.env.BASE_URL}/static/OLL/dynamic/sune_full.gif`,
   },
   {
     title: 'PLL (Permutation Last Layer)',
     href: '/advancedPLL',
-    staticImg: '/static/PLL/static/PLL-T.png',
-    dynamicImg: '/static/PLL/dynamic/PLL-T.gif',
+    staticImg: `${import.meta.env.BASE_URL}/static/PLL/static/PLL-T.png`,
+    dynamicImg: `${import.meta.env.BASE_URL}/static/PLL/dynamic/PLL-T.gif`,
   },
 ]
 

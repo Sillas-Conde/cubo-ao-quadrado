@@ -29,7 +29,7 @@ export function CasesAlg({ caseKey }: CasesAlgProps) {
   const containerRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
-    fetch('/cases.json')
+    fetch(`${import.meta.env.BASE_URL}cases.json`)
       .then((res) => res.json())
       .then((data: CasesData) => {
         const list = data[caseKey] ?? []

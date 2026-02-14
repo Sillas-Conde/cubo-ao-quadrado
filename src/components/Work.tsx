@@ -4,20 +4,20 @@ const methods = [
   {
     title: 'Método Básico',
     href: '/',
-    staticImg: '/static/OLL/static/sune_invertido.png',
-    dynamicImg: '/static/OLL/dynamic/sune_full.gif',
+    staticImg: `${import.meta.env.BASE_URL}/static/OLL/static/sune_invertido.png`,
+    dynamicImg: `${import.meta.env.BASE_URL}/static/OLL/dynamic/sune_full.gif`,
   },
   {
     title: 'Método Avançado',
     href: '/advanced',
-    staticImg: '/static/OLL/static/sune_invertido.png',
-    dynamicImg: '/static/OLL/dynamic/sune_full.gif',
+    staticImg: `${import.meta.env.BASE_URL}/static/OLL/static/sune_invertido.png`,
+    dynamicImg: `${import.meta.env.BASE_URL}/static/OLL/dynamic/sune_full.gif`,
   },
   {
     title: 'Treinamento',
     href: '/treinamento',
-    staticImg: '/static/OLL/static/sune_invertido.png',
-    dynamicImg: '/static/OLL/dynamic/sune_full.gif',
+    staticImg: `${import.meta.env.BASE_URL}/static/OLL/static/sune_invertido.png`,
+    dynamicImg: `${import.meta.env.BASE_URL}/static/OLL/dynamic/sune_full.gif`,
   },
 ]
 
