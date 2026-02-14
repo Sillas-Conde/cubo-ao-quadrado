@@ -1,0 +1,9 @@
+[
+    {
+      "id": 0,
+      "name": "T",
+      "formula": ["R U R' U' R' F R2 U' R' U' R U R' F'"],
+      "staticImage": "/static/PLL/static/PLL-T.png",
+      "dynamicImage": "/static/PLL/dynamic/PLL-T.gif"
+    }
+  ]

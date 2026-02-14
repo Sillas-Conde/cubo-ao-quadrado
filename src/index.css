@@ -1,0 +1,353 @@
+/* From cube project: styles + nav-bar + home component styles */
+body,
+html {
+  padding: 0;
+  margin: 0;
+}
+
+/* --- Nav bar (nav-bar.component) --- */
+.nav-bar {
+  height: 80px;
+  margin: 0;
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-bar-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  gap: 25px;
+}
+
+#nav-bar-routes {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  gap: 100px;
+}
+
+.nav-bar-text {
+  color: white;
+}
+
+.nav-bar-link {
+  text-decoration: none;
+}
+
+.nav-bar-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+  padding: 0;
+}
+
+.nav-bar-user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-bar-email {
+  font-size: 0.9rem;
+  color: #9a9691;
+}
+
+.nav-bar-logout:hover,
+.nav-bar-login:hover {
+  color: #e07c4c;
+}
+
+/* --- Main image section (home) --- */
+#main-img {
+  height: 250px;
+  width: 100%;
+  position: relative;
+}
+
+#main-img h1 {
+  position: absolute;
+  margin: 0;
+  margin-left: 10%;
+  padding-top: 5%;
+  z-index: 3;
+  font-weight: bolder;
+}
+
+#img-div {
+  position: absolute;
+  height: 250px;
+  width: 100%;
+  background-image: url("/static/cube_background.png");
+  background-size: 40% auto;
+  background-repeat: repeat;
+  background-position: center;
+  opacity: 0.25;
+  z-index: 2;
+}
+
+/* --- Níveis / methods --- */
+#methods {
+  padding: 5%;
+  padding-top: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10%;
+}
+
+#methods .method {
+  justify-items: center;
+  flex: 1;
+}
+
+#methods .method a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#methods .method img {
+  width: 100%;
+}
+
+.dynamic-img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.dynamic-img .static {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.dynamic-img .static:hover {
+  opacity: 0;
+}
+
+.dynamic-img .dynamic {
+  width: 100%;
+  display: block;
+}
+
+#methods h2,
+.methods-section h2 {
+  margin-top: 5%;
+  margin-left: 5%;
+  width: 100%;
+}
+
+#methods .method h3 {
+  margin: 0.5rem 0 0;
+  text-align: center;
+}
+
+/* Responsive */
+/* --- Advanced alg page (puzzle + alg grid) --- */
+.puzzle {
+  padding: 2rem 5%;
+  margin-top: 1rem;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.puzzle-controls {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #9a9691;
+  font-size: 0.95rem;
+}
+
+.puzzle-view {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.puzzle-player-wrap {
+  flex-shrink: 0;
+  min-width: 384px;
+  min-height: 256px;
+}
+
+.puzzle-player-loading {
+  min-width: 384px;
+  min-height: 256px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1a1a1a;
+  border: 1px solid #2d2d2d;
+  border-radius: 8px;
+  color: #9a9691;
+}
+
+.puzzle .player {
+  display: block;
+  margin: 0;
+}
+
+
+.puzzle-formula-wrap {
+  min-width: 200px;
+  max-width: 360px;
+  padding: 1.5rem;
+  background: #1a1a1a;
+  border: 1px solid #2d2d2d;
+  border-radius: 8px;
+}
+
+.puzzle-formula-title {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #e8e6e3;
+}
+
+.puzzle-formula-text {
+  margin: 0;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.95rem;
+  color: #e07c4c;
+  word-break: break-all;
+  line-height: 1.5;
+}
+
+.puzzle-formula-placeholder {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #6a6560;
+  font-style: italic;
+}
+
+.cases-section {
+  padding: 2rem 5%;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Cases grid: 4 per line, table-like (overrides #methods flex when this class is present) */
+#methods.methods-alg-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  padding: 0;
+  gap: 1rem;
+}
+
+.methods-alg-grid {
+  width: 100%;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.methods-alg-grid .method,
+#methods.methods-alg-grid .method {
+  flex: none;
+  justify-items: center;
+  cursor: pointer;
+  min-width: 0;
+}
+
+.methods-alg-grid .method img,
+#methods.methods-alg-grid .method img {
+  width: 100%;
+}
+
+.method-case {
+  padding: 0.75rem 1rem;
+  border: 1px solid #2d2d2d;
+  border-radius: 8px;
+  transition: border-color 0.2s, background 0.2s;
+  text-align: center;
+  min-height: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.method-case:hover {
+  border-color: #e07c4c;
+  background: #858585d0;
+}
+
+.method-case-selected {
+  border-color: #e07c4c;
+  background: #858585d0;
+}
+
+.method-case .case-formula {
+  margin: 0.35rem 0 0;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.75rem;
+  color: #000000;
+  word-break: break-all;
+  line-height: 1.3;
+}
+
+.method-case h3 {
+  margin: 0;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.methods-advanced {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10%;
+}
+
+@media (max-width: 768px) {
+  .nav-bar {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  #nav-bar-routes {
+    gap: 1.5rem;
+  }
+
+  #methods {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .methods-alg-grid,
+  #methods.methods-alg-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .puzzle-view {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .puzzle-formula-wrap {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,104 @@
+.treinamento-page {
+  padding-bottom: 3rem;
+}
+
+.treinamento-timer-section {
+  padding: 2rem 5%;
+  text-align: center;
+}
+
+.treinamento-display {
+  font-size: clamp(2.5rem, 8vw, 4rem);
+  font-weight: 700;
+  font-family: "JetBrains Mono", monospace;
+  color: #e8e6e3;
+  letter-spacing: 0.05em;
+  margin-bottom: 1.5rem;
+}
+
+.treinamento-controls {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.treinamento-btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.treinamento-btn-primary {
+  background: #e07c4c;
+  color: #0f0f0f;
+}
+
+.treinamento-btn-primary:hover {
+  background: #f09268;
+}
+
+.treinamento-btn-secondary {
+  background: transparent;
+  color: #e07c4c;
+  border: 2px solid #e07c4c;
+}
+
+.treinamento-btn-secondary:hover {
+  background: #e07c4c;
+  color: #0f0f0f;
+}
+
+.treinamento-hint {
+  color: #9a9691;
+  font-size: 0.9rem;
+}
+
+.treinamento-hint kbd {
+  display: inline-block;
+  padding: 0.15rem 0.4rem;
+  font-size: 0.85em;
+  background: #2d2d2d;
+  border-radius: 4px;
+  color: #e8e6e3;
+}
+
+.treinamento-history-section {
+  padding: 0 5% 2rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.treinamento-history-section h2 {
+  margin: 0 0 1rem;
+  font-size: 1.25rem;
+  color: #e8e6e3;
+}
+
+.treinamento-empty {
+  color: #9a9691;
+  margin: 0;
+}
+
+.treinamento-history-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.treinamento-history-item {
+  padding: 0.75rem 1rem;
+  background: #1a1a1a;
+  border: 1px solid #2d2d2d;
+  border-radius: 8px;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 1.1rem;
+  color: #e8e6e3;
+}

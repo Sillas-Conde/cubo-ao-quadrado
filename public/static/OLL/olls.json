@@ -1,0 +1,51 @@
+[
+    {
+      "id": 0,
+      "name": "Sune Invertido",
+      "formula": ["R' U' R U' R' U R U' R' U2 R"],
+      "staticImage": "/static/OLL/static/sune_invertido.png",
+      "dynamicImage": "/static/OLL/dynamic/sune_full.gif"
+    },
+    {
+      "id": 1,
+      "name": "Sune Invertido",
+      "formula": ["U R' L B D U"],
+      "staticImage": "/static/OLL/static/sune_invertido.png",
+      "dynamicImage": "/static/OLL/dynamic/sune_full.gif"
+    },
+    {
+      "id": 2,
+      "name": "Sune Invertido",
+      "formula": ["R"],
+      "staticImage": "/static/OLL/static/sune_invertido.png",
+      "dynamicImage": "/static/OLL/dynamic/sune_full.gif"
+    },
+    {
+      "id": 3,
+      "name": "Sune Invertido",
+      "formula": ["L"],
+      "staticImage": "/static/OLL/static/sune_invertido.png",
+      "dynamicImage": "/static/OLL/dynamic/sune_full.gif"
+    },
+    {
+      "id": 4,
+      "name": "Sune Invertido",
+      "formula": ["D"],
+      "staticImage": "/static/OLL/static/sune_invertido.png",
+      "dynamicImage": "/static/OLL/dynamic/sune_full.gif"
+    },
+    {
+      "id": 5,
+      "name": "Sune Invertido",
+      "formula": ["B"],
+      "staticImage": "/static/OLL/static/sune_invertido.png",
+      "dynamicImage": "/static/OLL/dynamic/sune_full.gif"
+    },
+    {
+      "id": 6,
+      "name": "Sune Invertido",
+      "formula": ["U R' L B D U"],
+      "staticImage": "/static/OLL/static/sune_invertido.png",
+      "dynamicImage": "/static/OLL/dynamic/sune_full.gif"
+    }
+  ]
